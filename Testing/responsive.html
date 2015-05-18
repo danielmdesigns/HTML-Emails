@@ -14,34 +14,78 @@
 <body bgcolor="bisque" style="margin:0; padding:0; width: 100% !important; height:100%;">
 
 <!-- main table is 100% width -->
-<table border="0" cellpadding="0" cellspacing="0" style="margin:0; padding:20px; width: 100%">
+<table border="0" cellpadding="0" cellspacing="0" style="margin:0;width: 100%">
     
 <!-- TOP -->
 <tr align="center">
 <!-- max-width is 600px! w/ display:block -->
-<td bgcolor="azure" style="max-width:600px !important; display:block; padding:20px; font-weight:bold; color:#fffffff;" align="center"> Simple Responsive Table
-</td>
+  <td bgcolor="azure" style="max-width:600px !important; display:block; padding:20px 0; font-weight:bold; color:#fffffff;" align="center"> Simple Responsive Table
+  </td>
+</tr>
+
+<!-- IMAGE -->
+<tr align="center">
+  <td style="max-width:600px; display:block;">
+    <img style="max-width:100%; height:auto;" src="http://goo.gl/BL3DjU" width="600" height="600" alt="mouse"/>
+  </td>
 </tr>
 
 <!-- MIDDLE -->
 <tr align="center">
 <!-- max-width is 600px! w/ display:block -->
-<td bgcolor="#ffffff" style="max-width:600px !important; display:block; padding:20px; text-align:left;">
-What makes tables responsive with the the least amount of code, and what elements are neccessary to use when coding HTML Emails for the future?
-    
-<br><br>
-1.) first, you must include the meta viewport & content width=device-width in the head.<br><br>
-2.) set body to 100% width<br><br>
-3.) then, the main table container also needs to be 100% width.<br><br>
-4.) then individual td cells, are max-width of 600px, but you have to use the !important declaration and also use the display:block; property.<br><br>
+<td bgcolor="#ffffff" style="max-width:600px !important; display:block; padding:20px 0; text-align:left;">
+  <div style="padding:0 20px;">
+  What makes tables responsive with the the least amount of markup & what elements are neccessary to use when coding HTML Emails for the future?
+      
+  <br><br>
+  1.) first, you must include the meta viewport & content width=device-width in the head.<br><br>
+  2.) set body to 100% width<br><br>
+  3.) then, the main table container also needs to be 100% width.<br><br>
+  4.) ALL individual td cells, are max-width of 600px, but you have to use the <em>!important</em> declaration and also use the <em>display:block;</em> property.<br><br>
+  5.) img tags need a max-width of 100% and height of auto, placed inside of the td cell<br><br>
+  6.) finally, put text into a div w/ right & left padding to give it space<br><br>
+  
+  that's it! that's all we should need in order to have responsive tables!<br><br>
+  
+<!-- BULLET LIST -->
+<table cellpadding="2" cellspacing="2" border="0"> 
+  <tr>
+    <td style="text-indent:20px;" valign="top"><strong>1.</strong></td>
+    <td style="text-align:left;">List item one</td>
+  </tr>
+  <tr>
+    <td style="text-indent:20px;" valign="top"><strong>&bull;</strong></td>
+    <td style="text-align:left;">List item two</td>
+  </tr>
+  <tr>
+    <td style="text-indent:20px;" valign="top"><strong>•</strong></td>
+    <td style="text-align:left;">List item three</td>
+  </tr>
+   <tr>
+    <td style="text-indent:20px;" valign="top"><strong>*</strong></td>
+    <td style="text-align:left;">outlook '07 & '11 wont display bullets</td>
+  </tr>
+</table>
+</div>
 
-that's it! that's all we should need in order to have responsive tables!
+<br>
+<!-- BUTTON -->
+<center>
+  <table align="center" width="150">
+    <tr>
+      <td align="center" bgcolor="greenyellow" width="150">
+      <a href="#" target="_blank" style="text-align:center; padding:12px 18px 12px 18px; display:inline-block; width:150px;">Simplest Button</a>
+      </td>
+    </tr>
+  </table>
+</center>
+  
 </td>
     
 <!-- BOTTOM -->
 <tr align="center">
 <!-- vertically align text in middle, gotta use line-height -->
-<td bgcolor="beige" style="max-width:600px !important; display:block; padding:20px; line-height:250px;" height="250" align="center"> my image </td>
+  <td bgcolor="beige" style="max-width:600px !important; display:block; padding:20px 0; line-height:50px;" height="50" align="center"> footer </td>
 </tr>
 
 </tr>
