@@ -8,6 +8,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <!-- End Important -->
 <title>Simple Responsive Table</title>
+
+<style>
+@media only screen and (max-width: 450px) {
+td[class="column"] {
+  display: block;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+}
+</style>
+
 </head>
 
 <!-- body is 100% width -->
@@ -43,7 +56,8 @@
   3.) then, the main table container also needs to be 100% width.<br><br>
   4.) ALL individual td cells, are max-width of 600px, but you have to use the <em>!important</em> declaration and also use the <em>display:block;</em> property.<br><br>
   5.) img tags need a max-width of 100% and height of auto, placed inside of the td cell<br><br>
-  6.) finally, put text into a div w/ right & left padding to give it space<br><br>
+  6.) for body copy, put text into a div w/ right & left padding to give it space<br><br>
+  7.) finally, for 2cols -- you need to nest a table w/ media queries inside a tr<br><br>
   
   that's it! that's all we should need in order to have responsive tables!<br><br>
   
@@ -79,8 +93,60 @@
     </tr>
   </table>
 </center>
-  
 </td>
+
+
+<!-- 2COL -->
+<tr align="center">
+  <td style="max-width:600px !important; display:block !important;">
+  
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <!-- Left Col -->
+      <td class="column" width="50%" align="left" valign="top" style="padding: 20px; background: peru; color: #fff;">
+      <h3>Left Side</h3>
+      Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
+      </td>
+      
+      <!-- Right Col -->
+      <td class="column" width="50%" align="left" valign="top" style="padding: 20px; background: chocolate; color: #fff;">
+      <h3>Right Side</h3>
+      Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
+      </td>
+    </tr>
+  </table>
+  
+  </td>
+</tr>
+
+<!-- 3COL -->
+<tr align="center">
+  <td style="max-width:600px !important; display:block !important;">
+  
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <!-- Left Col -->
+      <td class="column" width="33.33333%" align="left" valign="top" style="padding: 20px; background: yellow; color: #000;">
+      <h3>A</h3>
+      Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
+      </td>
+      
+      <!-- Middle Col -->
+      <td class="column" width="33.33333%" align="left" valign="top" style="padding: 20px; background: gold; color: #000;">
+      <h3>B</h3>
+      Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
+      </td>
+      
+      <!-- Right Col -->
+      <td class="column" width="33.33333%" align="left" valign="top" style="padding: 20px; background: goldenrod; color: #000;">
+      <h3>C</h3>
+      Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum.
+      </td>
+    </tr>
+  </table>
+  
+  </td>
+</tr>
     
 <!-- BOTTOM -->
 <tr align="center">
