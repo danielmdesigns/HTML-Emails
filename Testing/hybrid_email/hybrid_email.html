@@ -1,0 +1,587 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- gives us support for all Unicode characters in our document. -->	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--used here so that Windows Phones will display our mobile version correctly-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style type="text/css">
+/*base styles*/
+body {
+    Margin: 0;
+    padding: 0;
+    min-width: 100%;
+    background-color: #ffffff;
+}
+table {
+    border-spacing: 0;
+    font-family: sans-serif;
+    color: #333333;
+}
+td {
+    padding: 0;
+}
+img {
+    border: 0;
+}
+.wrapper {
+    width: 100%;
+    table-layout: fixed;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+.webkit {
+    max-width: 600px;
+}
+
+/* Windows Phone Viewport Fix */
+@-ms-viewport { 
+    width: device-width; 
+}
+
+/*email styles*/
+.outer {
+    Margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+.full-width-image img {
+    width: 100%;
+    height: auto;
+}
+.inner {
+	padding: 10px;
+}
+p {
+	Margin:0;
+}
+a {
+	color:#0085b2;
+	text-decoration:underline;
+}
+.h1 {
+	font-size:21px;
+	font-weight:bold;
+	Margin-bottom:18px;
+}
+.h2 {
+	font-size:18px;
+	font-weight:bold;
+	Margin-bottom:12px;
+}
+
+/*one column layout*/
+.one-column .contents {
+	text-align:left;
+}
+.one-column p {
+	font-size:14px;
+	Margin-bottom:10px;
+}
+
+/*two column layout*/
+.two-column {
+    text-align: center;
+    font-size: 0;
+}
+.two-column .column {
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+.contents {
+    width: 100%;
+}
+.two-column .contents {
+    font-size: 14px;
+    text-align: left;
+}
+.two-column img {
+    width: 100%;
+    height: auto;
+}
+.two-column .text {
+    padding-top: 10px;
+}
+
+/*three column layout*/
+.three-column {
+    text-align: center;
+    font-size: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.three-column .column {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+.three-column .contents {
+    font-size: 14px;
+    text-align: center;
+}
+.three-column img {
+    width: 100%;
+    height: auto;
+}
+.three-column .text {
+    padding-top: 10px;
+}
+
+/* left sidebar layout */
+.left-sidebar {
+    text-align: center;
+    font-size: 0;
+}
+.left-sidebar .column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.left-sidebar .left {
+    max-width: 100px;
+}
+.left-sidebar .right {
+    max-width: 500px;
+}
+.left-sidebar .contents {
+    font-size: 14px;
+    text-align: center;
+}
+.left-sidebar a {
+    color: #85ab70;
+}
+
+/* right sidebar layout */
+.right-sidebar {
+    text-align: center;
+    font-size: 0;
+}
+.right-sidebar .column {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.right-sidebar .left {
+    max-width: 100px;
+}
+.right-sidebar .right {
+    max-width: 500px;
+}
+.right-sidebar .contents {
+    font-size: 14px;
+    text-align: center;
+}
+.right-sidebar a {
+    color: #70bbd9;
+}
+
+/*media queries*/
+@media screen and (max-width: 400px) {
+.two-column .column,
+.three-column .column {
+	max-width: 100% !important;
+}
+.three-column img {
+	max-width: 50% !important;
+}
+}
+
+@media screen and (min-width: 401px) and (max-width: 620px) {
+.three-column .column {
+	max-width: 33% !important;
+}
+.two-column .column {
+	max-width: 50% !important;
+}
+}
+</style>
+<!--force outlook to collapse borders on all tables & prevent unwanted gaps-->
+<!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+    table {border-collapse: collapse;}
+</style>
+<![endif]-->
+</head>
+<body>
+<center class="wrapper">
+
+<div class="webkit">
+
+<!--[if (gte mso 9)|(IE)]>
+<table width="600" align="center">
+<tr>
+<td>
+<![endif]-->
+<table class="outer" align="center">
+<!--header image row-->
+<tr>
+  <td class="full-width-image">
+    <!--header img-->
+    <img src="header.jpg" alt="" />
+  </td>
+</tr>
+
+<!--single column row-->
+<tr>
+  <td class="one-column">
+
+<!--single column content-->
+<table width="100%">
+  <tr>
+    <td class="inner contents">
+      <p class="h1">Title or Subject</p>
+      <p>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit sit amet non magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+    </td>
+  </tr>
+</table>
+    
+  </td>
+</tr>
+
+<!--two column row-->
+<tr>
+<td class="two-column">
+<!--[if (gte mso 9)|(IE)]>
+<table width="100%">
+<tr>
+
+LEFT
+<td width="50%" valign="top">
+<![endif]-->
+<div class="column">
+<table width="100%">
+  <tr>
+    <td class="inner">
+
+<table class="contents">
+  <tr>
+    <td>
+      <img src="two-column-01.jpg" alt="" />
+    </td>
+  </tr>
+  <tr>
+    <td class="text">
+    Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+    </td>
+  </tr>
+</table>
+
+    </td>
+  </tr>
+</table>
+</div>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+
+RIGHT
+<td width="50%" valign="top">
+<![endif]-->
+<div class="column">
+<table width="100%">
+  <tr>
+    <td class="inner">
+
+<table class="contents">
+  <tr>
+    <td>
+      <img src="two-column-01.jpg" alt="" />
+    </td>
+  </tr>
+  <tr>
+    <td class="text">
+    Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+    </td>
+  </tr>
+</table>
+
+    </td>
+  </tr>
+</table>
+</div>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+
+</tr>
+</table>
+<![endif]-->
+</td>
+</tr>
+
+<!--three column row-->
+<tr>
+<td class="three-column">
+<!--[if (gte mso 9)|(IE)]>
+<table width="100%">
+<tr>
+
+LEFT
+<td width="200" valign="top">
+<![endif]-->
+<table class="column">
+  <tr>
+    <td class="inner">
+    
+<table class="contents">
+  <tr>
+    <td>
+      <img src="three-column-01.jpg" alt="" />
+    </td>
+  </tr>
+  <tr>
+    <td class="text">
+    Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat. 
+    </td>
+  </tr>
+</table>
+
+    </td>
+  </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+
+CENTER
+<td width="200" valign="top">
+<![endif]-->
+<table class="column">
+  <tr>
+    <td class="inner">
+    
+<table class="contents">
+  <tr>
+    <td>
+      <img src="three-column-01.jpg" alt="" />
+    </td>
+  </tr>
+  <tr>
+    <td class="text">
+    Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat. 
+    </td>
+  </tr>
+</table>
+
+    </td>
+  </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+
+RIGHT
+<td width="200" valign="top">
+<![endif]-->
+<table class="column">
+  <tr>
+    <td class="inner">
+    
+<table class="contents">
+  <tr>
+    <td>
+      <img src="three-column-01.jpg" alt="" />
+    </td>
+  </tr>
+  <tr>
+    <td class="text">
+    Scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat. 
+    </td>
+  </tr>
+</table>
+
+    </td>
+  </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</td>
+</tr>
+
+<!--muliple 3 column row(s)-->
+<tr>
+<td class="three-column">
+<!--[if (gte mso 9)|(IE)]>
+<table width="100%">
+<tr>
+
+top left
+<td width="200" valign="top">
+<![endif]-->
+<table class="column">
+  <tr>
+    <td class="inner contents">
+      <p class="h2">Heading</p>
+      <p>Class eleifend aptent taciti sociosqu ad litora torquent conubia</p>
+      <p><a href="#">Read more</a></p>
+    </td>
+  </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+
+top center
+<td width="200" valign="top">
+<![endif]-->
+<table class="column">
+  <tr>
+    <td class="inner contents">
+      <p class="h2">Heading</p>
+      <p>Class eleifend aptent taciti sociosqu ad litora torquent conubia</p>
+      <p><a href="#">Read more</a></p>
+    </td>
+  </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+
+top right
+<td width="200" valign="top">
+<![endif]-->
+<table class="column">
+  <tr>
+    <td class="inner contents">
+      <p class="h2">Heading</p>
+      <p>Class eleifend aptent taciti sociosqu ad litora torquent conubia</p>
+      <p><a href="#">Read more</a></p>
+    </td>
+  </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+<tr>
+
+bottom left
+<td width="200" valign="top">
+<![endif]-->
+<table class="column">
+  <tr>
+    <td class="inner contents">
+      <p class="h2">Heading</p>
+      <p>Class eleifend aptent taciti sociosqu ad litora torquent conubia</p>
+      <p><a href="#">Read more</a></p>
+    </td>
+  </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+
+bottom center
+<td width="200" valign="top">
+<![endif]-->
+<table class="column">
+  <tr>
+    <td class="inner contents">
+      <p class="h2">Heading</p>
+      <p>Class eleifend aptent taciti sociosqu ad litora torquent conubia</p>
+      <p><a href="#">Read more</a></p>
+    </td>
+  </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+
+bottom right
+<td width="200" valign="top">
+<![endif]-->
+<table class="column">
+  <tr>
+    <td class="inner contents">
+      <p class="h2">Heading</p>
+      <p>Class eleifend aptent taciti sociosqu ad litora torquent conubia</p>
+      <p><a href="#">Read more</a></p>
+    </td>
+  </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</td>
+</tr>
+
+<!--left sidebar column-->
+<tr>
+<td class="left-sidebar" dir="rtl">
+<!--[if (gte mso 9)|(IE)]>
+<table width="100%" dir="rtl">
+<tr>
+<td width="100">
+<![endif]-->
+<table class="column left" dir="ltr">
+  <tr>
+    <td class="inner">
+        <img src="sidebar-01.jpg" width="80" height="80" alt="" />
+    </td>
+  </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td><td width="500">
+<![endif]-->
+<table class="column right" dir="ltr">
+  <tr>
+    <td class="inner contents">
+        Praesent laoreet malesuada cursus. Maecenas scelerisque congue eros eu posuere. Praesent in felis ut velit pretium lobortis rhoncus ut erat.
+    </td>
+  </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</td>
+</tr>
+
+<!--right sidebar column-->
+<tr>
+  <td class="right-sidebar">
+<!--[if (gte mso 9)|(IE)]>
+<table width="100%">
+<tr>
+<td width="100">
+<![endif]-->
+<table class="column left">
+  <tr>
+    <td class="inner contents">
+      <img src="sidebar-01.jpg" width="80" height="80" alt="" />
+    </td>
+  </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td><td width="500">
+<![endif]-->
+<table class="column right">
+  <tr>
+    <td class="inner contents">
+        Maecenas sed ante pellentesque, posuere leo id, eleifend dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra. <a href="#">Per&nbsp;inceptos</a>
+    </td>
+  </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+  </td>
+</tr>
+
+</table>
+<!--end outer-->
+
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+
+</div>
+
+</center>
+</body>
