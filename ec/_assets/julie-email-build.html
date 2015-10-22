@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+/* removes any gaps around frame of email */
+/* disable default font adjustment that email clients provide*/
+body {
+  margin: 0;
+  padding: 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* disable inherited layout quirks */
+table {
+  border-spacing: 0;
+}
+
+table td {
+  border-collapse: collapse;
+}
+
+/* Outlook specific resets */
+.ExternalClass {
+  width:100%;
+}
+
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div{
+  line-height: 100%;
+}
+
+/* Outermost container in Outlook.com */
+.ReadMsgBody {
+  width: 100%;
+  background-color: grey; /* your custom background color */
+}
+
+/* reset table spacing defaults in Outlook's render engine Microsoft Word */
+table {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+/* images resized by IE can look bad, let's make them look less bad =) */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* other resets, could be outdated? */
+/* for images */
+img,
+a img {
+  border: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+/* yahoo links override */
+.yshortcuts a {
+  background: none !important;
+  border-bottom: none !important;
+}
+
+</style>
+</head>
+
+<body>
+</body>
+</html>
+
+
+<style>
+body {
+	margin: 0;
+	padding: 0;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	min-width: 100% !important;
+}
+table {
+	border-spacing: 0;
+	mso-table-lspace: 0pt;
+	mso-table-rspace: 0pt;
+}
+table td {
+	border-collapse: collapse;
+}
+.ReadMsgBody {
+	width: 100%;
+	background-color: #ebebeb;
+}
+.ExternalClass {
+	width: 100%;
+	line-height: 100%;
+}
+img {
+	-ms-interpolation-mode: bicubic;
+	border: 0;
+  	outline: none;
+  	text-decoration: none;
+}
+.yshortcuts a {
+	background: none !important;
+	border-bottom: none !important;
+}
+span.preheader {
+	display: none !important;
+}
+/* email specific */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+	text-decoration: none !important;
+	font-size: inherit !important;
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	line-height: inherit !important;
+}
+</style>
